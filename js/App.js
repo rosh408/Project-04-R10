@@ -7,15 +7,25 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import {FavesProvider} from './context/FavesContext';
+import RootStackNavigator from './navigation/RootStackNavigator';
+import {ApolloProvider} from '@apollo/react-hooks';
 
 export default class App extends Component {
   render() {
     return (
-      <View>
-        <Text>R10</Text>
-      </View>
+      <ApolloProvider client={client}>
+        <FavesProvider>
+          <View>
+            <RootStackNavigator/>
+            dsc sdc lca,lsc,
+          </View>
+        </FavesProvider>
+      </ApolloProvider>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  
+});

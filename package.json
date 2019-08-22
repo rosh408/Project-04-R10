@@ -5,9 +5,13 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "emulator": "cd ~/Library/Android/sdk/tools && ./emulator -avd Pixel_2_API_28_1"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.0.1",
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.4.2",
     "react": "16.8.6",
     "react-native": "0.60.5"
   },
